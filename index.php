@@ -4,6 +4,14 @@
   header("Location: $redirect");
 } ?>
 
+<?php
+  $remote_ip = $_SERVER["REMOTE_ADDR"];
+  $ch = curl_init("http://ip-api.com/json/$remote_ip");
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  $data = fread($ch);
+  $ip_data = json_decode(curl_exec($ch), true);
+?>
+
 <html>
 <head>
 <title>Isaac Diamond</title>
@@ -29,7 +37,10 @@ ga('send', 'pageview');
 <h2> The current time is: <?php echo(date("g:i:s a")); ?>, GMT. 
   <?php date_default_timezone_set('America/Los_Angeles'); 
   echo(date("g:i:s a")); ?>, PST</h2>
-<h2> You are visiting from: <?php echo($_SERVER["REMOTE_ADDR"])?> </h2>
+<h2> You are visiting from: <?php echo($_SERVER["REMOTE_ADDR"])?>. My guess is
+that's <?php echo $ip_data["org"] ?> in <?php echo $ip_data["city"] ?>, 
+<?php echo $ip_data["country"]
+?>.</h2>
 
 <a href="https://www.facebook.com/isaac.diamond.5">Facebook</a>
 

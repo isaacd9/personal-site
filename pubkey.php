@@ -48,4 +48,4 @@ avVimeq+Rfu2UbExNL9qggAwQIgNU+WPE+yjTDuyxOzcaLD3kofh468wv8UhMaid
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
 
-<a href="pubkey.txt">Direct Link</a>
+<a href="pubkey.asc">Direct Link</a>
