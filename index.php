@@ -34,11 +34,11 @@ ga('send', 'pageview');
 <div>
 <h1> It works! Welcome to Isaac's website. </h1>
 
-<h2> The current time is: <?php echo(date("g:i:s a")); ?>, GMT. 
-  <?php date_default_timezone_set('America/Los_Angeles'); 
+<h2> The current time is: <?php echo(date("g:i:s a")); ?>, GMT.
+  <?php date_default_timezone_set('America/Los_Angeles');
   echo(date("g:i:s a")); ?>, PST</h2>
 <h2> You are visiting from: <?php echo($_SERVER["REMOTE_ADDR"])?>. My guess is
-that's <?php echo $ip_data["org"] ?> in <?php echo $ip_data["city"] ?>, 
+that's <?php echo $ip_data["org"] ?> in <?php echo $ip_data["city"] ?>,
 <?php echo $ip_data["country"]
 ?>.</h2>
 
@@ -50,7 +50,7 @@ that's <?php echo $ip_data["org"] ?> in <?php echo $ip_data["city"] ?>,
 
 <a href="https://github.com/isaacd9/">GitHub</a>
 
-<a href="https://medium.com/@isaacdiamond">Medium</a>
+<a href="https://idd.svbtle.com">Svbtle</a>
 
 <a href="https://idd.photography">Photos</a>
 
