@@ -50,7 +50,7 @@ that's <?php echo $ip_data["org"] ?> in <?php echo $ip_data["city"] ?>,
 
 <a href="https://github.com/isaacd9/">GitHub</a>
 
-<a href="https://idd.svbtle.com">Svbtle</a>
+<a href="https://blog.isaac.diamonds">Blog</a>
 
 <a href="https://idd.photography">Photos</a>
 
