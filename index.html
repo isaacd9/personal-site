@@ -23,30 +23,34 @@
     .content h1 {
       margin: 3px 0;
       margin-top: 10px;
-      font-size: 4em;
+      font-size: 5em;
       font-weight: bolder;
     }
 
     .content h2 {
-      margin-top: 6px;
-      font-size: 1.4em;
+      margin-top: 18px;
+      font-size: 1.8em;
       border-bottom: 1px solid black;
       padding-bottom: 3px;
       margin-bottom: 3px;
     }
 
     .content p {
-      margin: 5px 0;
+      margin: 8px 0;
     }
 
     .content ul {
-      padding-top: 3px;
-      margin-bottom: 5px;
+      padding: 3px 18px;
+      margin: 7px 0;
+    }
+
+    p {
+      font-size: 1.15em;
     }
 
     .content ul li {
       line-height: 1.1;
-      padding-bottom: 6px;
+      margin: 8px 0;
       /* width: 680px; */
     }
 
@@ -64,50 +68,62 @@
     <p>isaacd9@gmail.com | 206-734-8559 | linkedin.com/in/isaacdiamond | github.com/isaacd9 </p>
 
     <h2>Skills</h2>
-    <p>Proficient: Go, Python, Ruby, Rust, JavaScript, Unix Systems Administration, Kubernetes, Shell, Git, MySQL,
-      MongoDB</p>
-    <p>Familiar: C++, C, Java, CSS3/HTML5, OCaml, Scala, Clojure, PostgreSQL</p>
+    <p>Proficient: Go, Rust, JavaScript, SQL, Unix Systems Administration, Kubernetes, Shell, Git, MongoDB, AWS
+    </p>
+    <p>Familiar: Python, Java, C++, C, Java, CSS3/HTML5, OCaml, PostgreSQL Administration, MySQL</p>
 
     <h2>Experience</h2>
     <p><span><strong>Meter</strong> - Software Engineer - San Francisco, CA</span><span class="pull-right">Oct
         2023 - Present</span></p>
     <p><span><strong>Stripe</strong> - Software Engineer - San Francisco, CA & Seattle, WA</span><span
         class="pull-right">Mar 2018 - Sep 2023</span></p>
-    <p>
-      Infrastructure engineer supporting Stripe's core compute platform, cloud
-      networking, and high availability and disaster recovery. Supported a
-      Kubernetes cluster running scheduled jobs which moved substantially all
-      of Stripe's money. Helped build a compute platform to run web services on
-      top of Kubernetes.
-    </p>
-    <p>
-      Built a control plane to deliver Envoy Proxy configuration to thousands
-      of servers to process hundreds of thousands of requests per second,
-      including all of Stripe's API and online database traffic. Supported the
-      Envoy data plane.
-    </p>
-    <p>
-      Founding member of the high availability and disaster recovery team,
-      comprising some of the most trusted and experienced engineers at Stripe.
-      Over the course of 18 months, we built a new disaster recovery system
-      that allowed Stripe to run APIs and services across multiple physical
-      regions and multiple countries. Regularly exercised the regional failover
-      system against production traffic to ensure its reliability without
-      impacting customers.
-    </p>
-    <p>
-      Shaved hundreds of milliseconds off of the tail latency of Stripe's API
-      by implementing a new architecture for routing Stripe API requests to the
-      backend.
-    </p>
+    <ul>
+      <li>
+        Infrastructure engineer supporting Stripe's core compute platform, cloud
+        networking, and high availability and disaster recovery. Supported a
+        Kubernetes cluster running scheduled jobs which moved substantially all
+        of Stripe's money. Helped build a compute platform to run web services on
+        top of Kubernetes.
+      </li>
+      <li>
+        Built a control plane to deliver Envoy Proxy configuration to thousands of
+        servers. Supported the Envoy data plane processing hundreds of thousands
+        of requests per second, including all of Stripe's API and online database
+        traffic.
+      </li>
+      <li>
+        Founding member of the high availability and disaster recovery team,
+        comprising some of the most trusted and experienced engineers at Stripe.
+        Over the course of 18 months, we built a new disaster recovery system
+        that allowed Stripe to run APIs and services across multiple physical
+        regions and multiple countries. Regularly exercised the regional failover
+        system against production traffic to ensure its reliability without
+        impacting customers.
+      </li>
+      <li>
+        Instrumented Stripe's core database libraries to determine when database
+        operations were likely to cross regional boundaries. This work formed
+        the core metrics to measure Stripe's ability to recover from a regional
+        outage and run performantly in a multi-region configuration. Named on a
+        patent for this work.
+      </li>
+      <li>
+        Shaved hundreds of milliseconds off of the tail latency of Stripe's API
+        by implementing a new architecture for routing Stripe API requests to the
+        backend.
+      </li>
+    </ul>
     <p><span><strong>Facebook</strong> - Production Engineer Intern - Menlo Park, CA</span><span
         class="pull-right">Summer 2017</span></p>
-    <p>Intern the Haystack/F4 team responsible for extabyte scale storage automation.
-
-      Developed a new trash collector for Facebook's primary BLOB storage system
-      reclaiming petabytes of space daily. Improved upon the existing trash
-      collector by decreasing the runtime of the process from 15 hours to 20
-      minutes.
+    <p>Intern the Haystack/F4 team responsible for extabyte scale storage automation.</p>
+    <ul>
+      <li>
+        Developed a new trash collector for Facebook's primary BLOB storage system
+        reclaiming petabytes of space daily. Improved upon the existing trash
+        collector by decreasing the runtime of the process from 15 hours to 20
+        minutes.
+      </li>
+    </ul>
     </p>
     <p><span><strong>Squarespace</strong> - Software Engineering Intern (Site Reliability) - New York, NY</span><span
         class="pull-right">Summer 2016</span></p>
@@ -122,19 +138,23 @@
     <p><span><strong>University of California, San Diego</strong> - B.S. Computer Science </span><span
         class="pull-right">Class of 2018 (Graduated December 2017)</span></p>
     <p><i>Jacobs School of Engineering</i></p>
-    <p class="single-line-info">National Merit Finalist - Provost Honors</p>
+    <p>National Merit Finalist</p>
+    <p>Triton Engineering Student Council Tech Team Lead</p>
+    <ul>
+      <li>Created a website and administration tools for
+        career fair, attended by over 100 companies and 3000 students.
+      </li>
+    </ul>
+
 
     <h2>Activities</h2>
-    <p><span><strong>Carcino Health</strong> - Software Engineer</span><span class="pull-right">2017</span></p>
-    <p>Developed a Node.js/Express web application that allows cancer
-      patients to track side-effects from their treatment and report them
-      to healthcare providers</p>
     <p><span><strong>Center for Applied Internet Data Analysis</strong> - Research Assistant</span><span
         class="pull-right">2016-2017</span></p>
-    <p>Built high performance and parallel Python tooling to collect
-      connectivity and performance metrics from a large network of
-      Raspberry Pi computers connected in homes and universities around the
-      world</p>
+    <ul>
+      <li>Worked on Python tooling to collect connectivity and performance metrics from
+        a large network of Raspberry Pi computers connected in homes and
+        universities around the world</li>
+    </ul>
   </div>
 </body>
 
