@@ -1,0 +1,28 @@
+instagraham.io {
+        encode gzip
+
+        reverse_proxy /api http://127.0.0.1:8000
+        root * /home/app/instagraham/www/static
+        file_server
+}
+
+isaac.diamonds, www.isaac.diamonds {
+        redir /myhttp http://example.com?{query}
+        encode gzip
+        root * /home/app/site
+        file_server
+        templates
+}
+
+feed.isaac.diamonds {
+        encode gzip
+        root * /home/app/feed
+        file_server
+}
+
+blog.isaac.diamonds {
+        encode gzip
+
+        root * /home/app/blog
+        file_server
+}

@@ -20,6 +20,19 @@ ga('send', 'pageview');
 <div>
 <h1> It works! Welcome to Isaac's website. </h1>
 
+<h2> The current time is: {{dateInZone "2006-01-02 15:04:05" (now) "UTC" }} UTC. {{dateInZone "2006-01-02 15:04:05" (now) "America/Los_Angeles" }} in San Francisco, (where I live).</h2>
+<h2> You are visiting from: {{.RemoteIP}}.  </h2>
+
+
+I'm Isaac. I like working with working with kind, thoughtful people to build
+large scale distributed systems.
+I'm particuarly interested in tools that make software engineering delightful
+(and the higher order effects of those tools), climate change, and building
+denser, more equitable cities with fanstastic public transportation.
+
+<br>
+<br>
+
 <a href="https://www.facebook.com/isaac.diamond.5">Facebook</a>
 
 <a href="https://linkedin.com/in/isaacdiamond">LinkedIn</a>
@@ -36,9 +49,12 @@ ga('send', 'pageview');
 
 <a href="resume.pdf">Resume</a>
 
-<a href="pubkey.php">PGP</a>
+<a href="pubkey.html">PGP</a>
 
 </div>
+<br>
+<img src="https://thecatapi.com/api/images/get?format=src&type=gif">
+
 </body>
 </html>
 
